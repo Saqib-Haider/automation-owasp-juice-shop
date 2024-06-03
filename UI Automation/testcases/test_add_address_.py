@@ -28,5 +28,6 @@ def test_add_items_to_basket(set_up_teardown)-> None:
     address_page.click_add_new_address()
     address_page.fill_up_form(country, name, number, zip_code, address, city, state)
 
+#Check after adding address and submitting
     expect(address_page.check_address()).to_be_visible()
 
