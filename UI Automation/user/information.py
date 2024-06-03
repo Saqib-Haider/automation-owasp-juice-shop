@@ -1,5 +1,5 @@
 email = "saqibhaider567@gmail.com"
-password = 'abc321@'
+password = ''
 country = 'bd'
 name = 'tester'
 number = '01766925564'
