@@ -4,7 +4,7 @@ from pages.AddressPage import AddressPage
 from pages.ProductListPage import ProductListPage
 from user import information
 from playwright.sync_api import Playwright, sync_playwright, expect, Page
-
+import allure
 
 def test_add_items_to_basket(set_up_teardown)-> None:
     page = set_up_teardown
