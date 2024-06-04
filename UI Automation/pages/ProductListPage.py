@@ -11,7 +11,7 @@ class ProductListPage:
         self.add_item_btn.click()
 
     def click_shopping_cart(self):
-        self.page.wait_for_timeout(5000)
+        self.page.wait_for_timeout(3000)
         self.shopping_cart_btn.click()
 
 
