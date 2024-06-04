@@ -1,0 +1,256 @@
+{
+	"id": "c2708ca9-9100-4bbe-b82d-febf0ddbc387",
+	"name": "Automation OWASP Juice Shop",
+	"timestamp": "2024-06-04T17:57:37.598Z",
+	"collection_id": "0-053a8559-06a9-4866-9a60-ed605f8916c2",
+	"folder_id": 0,
+	"environment_id": "91d3abe4-d633-4a60-ad4f-8f524b9458c8",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ca243afa-a966-402f-8f54-11d1ea85f81f",
+			"name": "Login",
+			"url": "https://juice-shop.herokuapp.com/rest/user/login",
+			"time": 275,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				275
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8b9bd7d6-5439-45a1-ae9d-939a173c1f30",
+			"name": "Add items basket",
+			"url": "https://juice-shop.herokuapp.com/api/BasketItems/",
+			"time": 271,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				271
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5f61886e-2bba-4b21-8bfd-73f6591628b6",
+			"name": "Get Basket items",
+			"url": "https://juice-shop.herokuapp.com/rest/basket/6",
+			"time": 257,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Only one item in Basket": true
+			},
+			"testPassFailCounts": {
+				"Only one item in Basket": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				257
+			],
+			"allTests": [
+				{
+					"Only one item in Basket": true
+				}
+			]
+		},
+		{
+			"id": "8e508fa7-c2fc-4b71-beb0-b1b2e517d005",
+			"name": "[Cleanup] Delete items basket",
+			"url": "https://juice-shop.herokuapp.com/api/BasketItems/55",
+			"time": 280,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				280
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "50015de3-e09a-47fa-9bd2-d87b89c8cd39",
+			"name": "Login",
+			"url": "https://juice-shop.herokuapp.com/rest/user/login",
+			"time": 287,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				287
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "028d9b89-5ec1-4d68-b021-c77440a9cbc1",
+			"name": "Add items basket",
+			"url": "https://juice-shop.herokuapp.com/api/BasketItems/",
+			"time": 280,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				280
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "28e3675e-246b-4642-b68e-c3b46bb27904",
+			"name": "Add items basket again",
+			"url": "https://juice-shop.herokuapp.com/api/BasketItems/",
+			"time": 276,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				276
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f3799ff7-241a-4ff4-80f9-b7e72c2e33db",
+			"name": "Delete items basket",
+			"url": "https://juice-shop.herokuapp.com/api/BasketItems/57",
+			"time": 293,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				293
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a5c86fda-3b4b-43b6-be5f-b3e4f363fd08",
+			"name": "Get Basket items",
+			"url": "https://juice-shop.herokuapp.com/rest/basket/6",
+			"time": 290,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Only one item in Basket": true
+			},
+			"testPassFailCounts": {
+				"Only one item in Basket": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Only one item in Basket": true
+				}
+			]
+		},
+		{
+			"id": "75c177d4-5a3b-478b-a39a-0ab631858dfd",
+			"name": "[Cleanup] Delete items basket",
+			"url": "https://juice-shop.herokuapp.com/api/BasketItems/56",
+			"time": 286,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				286
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2795,
+	"collection": {
+		"requests": [
+			{
+				"id": "ca243afa-a966-402f-8f54-11d1ea85f81f",
+				"method": "POST"
+			},
+			{
+				"id": "8b9bd7d6-5439-45a1-ae9d-939a173c1f30",
+				"method": "POST"
+			},
+			{
+				"id": "5f61886e-2bba-4b21-8bfd-73f6591628b6",
+				"method": "GET"
+			},
+			{
+				"id": "8e508fa7-c2fc-4b71-beb0-b1b2e517d005",
+				"method": "DELETE"
+			},
+			{
+				"id": "50015de3-e09a-47fa-9bd2-d87b89c8cd39",
+				"method": "POST"
+			},
+			{
+				"id": "028d9b89-5ec1-4d68-b021-c77440a9cbc1",
+				"method": "POST"
+			},
+			{
+				"id": "28e3675e-246b-4642-b68e-c3b46bb27904",
+				"method": "POST"
+			},
+			{
+				"id": "f3799ff7-241a-4ff4-80f9-b7e72c2e33db",
+				"method": "DELETE"
+			},
+			{
+				"id": "a5c86fda-3b4b-43b6-be5f-b3e4f363fd08",
+				"method": "GET"
+			},
+			{
+				"id": "75c177d4-5a3b-478b-a39a-0ab631858dfd",
+				"method": "DELETE"
+			}
+		]
+	}
+}
