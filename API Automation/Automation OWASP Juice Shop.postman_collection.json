@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "053a8559-06a9-4866-9a60-ed605f8916c2",
+		"_postman_id": "b8e30ead-658d-4686-a0ed-7ef64a03c99a",
 		"name": "Automation OWASP Juice Shop",
 		"description": "For Task 1,Sign in the user, add 1 item to the basket, verify that 1 item is in the basket.\nA cleanup request is added to ensure that there is no items in the cart and the test can be reused without manual interventions.\n\nFor Task 2,Sign in the user, add 2 items to the basket, delete 1 item and validate that only 1 item remains in the basket.\nA cleanup request is added to ensure that there is no items in the cart and the test can be reused without manual interventions.",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17477992"
 	},
 	"item": [
 		{
@@ -73,7 +74,8 @@
 									"console.log(\"ID saved: \" + id);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -92,7 +94,8 @@
 									"pm.variables.set(\"currentProductId\", productId);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -110,7 +113,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"ProductId\": {{currentProductId}},\r\n    \"BasketId\": \"6\",\r\n    \"quantity\": 1\r\n}"
+							"raw": "{\r\n    \"ProductId\": {{currentProductId}},\r\n    \"BasketId\": \"{{bid}}\",\r\n    \"quantity\": 1\r\n}"
 						},
 						"url": {
 							"raw": "https://juice-shop.herokuapp.com/api/BasketItems/",
@@ -274,7 +277,8 @@
 									"console.log(\"ID saved: \" + id);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -293,7 +297,8 @@
 									"pm.variables.set(\"currentProductId\", productId);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -311,7 +316,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"ProductId\": {{currentProductId}},\r\n    \"BasketId\": \"6\",\r\n    \"quantity\": 1\r\n}"
+							"raw": "{\r\n    \"ProductId\": {{currentProductId}},\r\n    \"BasketId\": \"{{bid}}\",\r\n    \"quantity\": 1\r\n}"
 						},
 						"url": {
 							"raw": "https://juice-shop.herokuapp.com/api/BasketItems/",
@@ -345,7 +350,8 @@
 									"console.log(\"ID saved: \" + id);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -364,7 +370,8 @@
 									"pm.variables.set(\"currentProductId\", productId);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -382,7 +389,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"ProductId\": {{currentProductId}},\r\n    \"BasketId\": \"6\",\r\n    \"quantity\": 1\r\n}"
+							"raw": "{\r\n    \"ProductId\": {{currentProductId}},\r\n    \"BasketId\": \"{{bid}}\",\r\n    \"quantity\": 1\r\n}"
 						},
 						"url": {
 							"raw": "https://juice-shop.herokuapp.com/api/BasketItems/",
