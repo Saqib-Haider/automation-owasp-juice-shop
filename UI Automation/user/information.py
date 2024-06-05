@@ -1,5 +1,5 @@
-email = "saqibhaider567@gmail.com"
-password = ''
+email = "testersh@gmail.com"
+password = 'abc321@'
 country = 'bd'
 name = 'tester'
 number = '01766925564'
