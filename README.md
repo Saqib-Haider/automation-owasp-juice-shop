@@ -8,9 +8,12 @@ Best to run API Automation first and then Run UI Automation
 **API Automation**
 
 API Automation is done with Postman tool along with Newman for reporting.
-1.To run, simply clone and export the collection and environment variable. Then run the Scenarios
 A clean up request is added to maintain stateless behaviour of entire automation.
-2.Simply to run with newman, 
+
+1.To run, simply clone and export the collection and environment variable. Then run the Scenarios
+OR
+
+2. Simply to run with newman, 
 
 1. Install nodejs
 2. Install newman
