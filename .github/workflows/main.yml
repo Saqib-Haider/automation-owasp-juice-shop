@@ -39,20 +39,20 @@ jobs:
         run: |
           xvfb-run pytest testcases
         working-directory: 'UI Automation'
+      
+      #- name: Upload Allure Report
+       # uses: actions/upload-artifact@v3
+        #with:
+         # name: allure-report
+          #path: UI Automation/allure-report
 
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: allure-report
-          path: UI Automation/allure-report
+      #- name: Generate Allure Report
+       # run: |
+        #  allure generate allure-report --clean -o allure-report
+        #working-directory: 'UI Automation'
 
-      - name: Generate Allure Report
-        run: |
-          allure generate allure-report --clean -o allure-report
-        working-directory: 'UI Automation'
-
-      - name: Upload Allure HTML Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: allure-html-report
-          path: UI Automation/allure-report
+      #- name: Upload Allure HTML Report
+        #uses: actions/upload-artifact@v3
+        #with:
+          #name: allure-html-report
+          #path: UI Automation/allure-report
