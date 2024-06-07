@@ -1,15 +1,17 @@
 # automation-owasp-juice-shop
 
-This projects contains automation for owasp juice shop.
+This respository contains automation for owasp juice shop.
 Best to run API Automation first and then Run UI Automation
 
 **Pre-requisite**: Ensure python3 installed and postman downloaded
-1. API Automation is done with Postman tool along with Newman for reporting.
-To run, simply clone and export the collection and environment variable. Then run the Scenarios
-A clean up request is added to maintain stateless behaviour of entire automation.
 
 **API Automation**
-Simply to run witth newman, 
+
+API Automation is done with Postman tool along with Newman for reporting.
+1.To run, simply clone and export the collection and environment variable. Then run the Scenarios
+A clean up request is added to maintain stateless behaviour of entire automation.
+2.Simply to run with newman, 
+
 1. Install nodejs
 2. Install newman
   ```
@@ -26,16 +28,19 @@ Simply to run witth newman,
 
 ```
 
+
 **UI Automation**
-UI Automation is done with Playwright,Pytest framework along with allure reporting. Also following generic Page Object Model format.
+
+
+UI automation tests for OWASP Juice Shop using Playwright and Pytest, organized in accordance with the Page Object Model (POM) design pattern. It includes setup instructions, usage examples, and information on CI/CD integration with GitHub Actions and reporting with Allure.
+
+1. Install the requirement.txt file
 ```
 pip install -r requirements.txt
 ```
 
-Then run the test cases
+4. Then run the test cases
 
 ```
 pytest testcases
 ```
-
-Added GitHub Action for CI/CD environment workflow for UI Automation
