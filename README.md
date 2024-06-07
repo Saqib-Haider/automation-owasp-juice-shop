@@ -24,7 +24,6 @@ A clean up request is added to maintain stateless behaviour of entire automation
 4. Run the collection, ensure that the working directory is API Automation
 ```
   newman run Automation OWASP Juice Shop.postman_collection.json -e OWASP Juice Shop Environment.postman_environment.json -r htmlextra 
-.
 
 ```
 
