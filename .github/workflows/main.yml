@@ -37,7 +37,7 @@ jobs:
 
       - name: Run tests
         run: |
-          xvfb-run pytest testcases
+          pytest testcases
         working-directory: 'UI Automation'
       
       #- name: Upload Allure Report
@@ -56,3 +56,7 @@ jobs:
         #with:
           #name: allure-html-report
           #path: UI Automation/allure-report
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
